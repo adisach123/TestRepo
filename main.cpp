@@ -1,29 +1,18 @@
 #include <iostream>
 
 using namespace std;
-int power(long,long);
+
 int main()
 {
-   long a,b,c;
-   cout<<"Enter the base"<<endl;
-   cin>>a;
-   cout<<"Enter the exponent"<<endl;
-   cin>>b;
+float a,b;
+cout<<"enter 2 nos. : "<<endl;
+cin>>a>>b;
+a=a/b;
+b=a*b;
+a=b/a;
+cout<<"a is : "<<a<<endl;
+cout<<"b is : "<<b;
 
-   c=power(a,b);
-   cout<<"Result : "<<c;
+ return 0;
 
-   return 0;
-}
-
-
-int power(long x, long y)
-{
-    long z;
-
-    for(int i=1;i<y; i++)
-    {
-       x*=x;
-    }
-    return x;
 }
